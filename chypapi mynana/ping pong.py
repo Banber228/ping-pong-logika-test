@@ -56,7 +56,8 @@ while not game_over:
     
     if ball.rect.y>width-50 or ball.rect.y<0:
         speed_y*-=1
-    if
+    if sprite.collide_rect(racket1,ball) or sprite.collide_rect(racker2,ball):
+        speed_y*-=1
     
     
     ball.reset()
