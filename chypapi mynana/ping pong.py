@@ -61,6 +61,11 @@ while not game_over:
     if sprite.collide_rect(racket1,ball) or sprite.collide_rect(racker2,ball):
         speed_y*-=1
     
+    racket1.reset()
+    racket2.reset()
+    
+    racket1.update_r()
+    racket2.update_l()
     
     ball.reset()
     display.update()
